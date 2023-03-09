@@ -1,3 +1,17 @@
+#AbelLevran
+#21343038
+
+matrix = [[2, -1, -1],
+    [4, 1, -1],
+    [1, 1, 1]]
+
+xyzA = [[1],
+     [5],
+     [0]]
+print(matrix[0], xyzA[0])
+print(matrix[1], xyzA[1])
+print(matrix[2], xyzA[2])
+print("\n")
 def gaussian_elimination(A, b):
     n = len(A)
     
@@ -33,7 +47,10 @@ def gaussian_elimination(A, b):
         x[i] /= aug_matrix[i][i]
     return x
 
+#mendeklarasikan matrix 
 A = [[2, -1, 1], [4, 1, -1], [1, 1, 1]]
 b = [1, 5, 0]
 x = gaussian_elimination(A, b)
+
+print("[x1,x2,x3]")
 print(x)
